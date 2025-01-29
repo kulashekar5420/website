@@ -7,15 +7,21 @@ body {
     padding: 0;
   }
   
-  /* Hero Section */
+    /* Hero Section */
   .hero-section {
-    background: url('hero-bg.jpg') no-repeat center center/cover;
-    background-size: cover;
+    background: url('images/home.jpg') no-repeat center center;
+    background-size: cover; /* Ensures the background image covers the entire section */
+    background-attachment: fixed; /* Optional: Makes the background fixed when scrolling */
     color: white;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     position: relative;
     z-index: 1;
+    height: 100vh; /* Ensures the hero section takes up the full height of the viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
+
   .hero-section .btn {
     animation: bounce 2s infinite;
   }
