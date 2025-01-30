@@ -1,65 +1,135 @@
-/* Global Styles */
+/* Reset & Global Styles */
 body {
-    font-family: 'Poppins', sans-serif;
-    line-height: 1.6;
-    color: #333;
-    margin: 0;
-    padding: 0;
-  }
-  
-    /* Hero Section */
-  .hero-section {
-    background: url('images/home.jpg') no-repeat center center;
-    background-size: cover; /* Ensures the background image covers the entire section */
-    background-attachment: fixed; /* Optional: Makes the background fixed when scrolling */
-    color: white;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    position: relative;
-    z-index: 1;
-    height: 100vh; /* Ensures the hero section takes up the full height of the viewport */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+}
 
-  .hero-section .btn {
-    animation: bounce 2s infinite;
-  }
-  
-  /* Hover Effect */
-  .card:hover {
-    transform: translateY(-10px);
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  /* Animations */
-  @keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {
-      transform: translateY(0);
-    }
-    40% {
-      transform: translateY(-10px);
-    }
-    60% {
-      transform: translateY(-5px);
-    }
-  }
-  
-  /* Footer */
-  footer .social-icons a {
-    text-decoration: none;
-    color: white;
-    font-size: 1.2rem;
-    margin: 0 10px;
-  }
-  
-  /* Media Queries */
-  @media (max-width: 768px) {
-    .hero-section h1 {
-      font-size: 3rem;
-    }
-    .social-icons a {
-      font-size: 1rem;
-    }
-  }
-  
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-left ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+}
+
+.nav-left ul li {
+  display: inline;
+}
+
+.nav-left ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.nav-right .logo {
+  height: 40px;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px;
+}
+
+.hero-content {
+  max-width: 50%;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+}
+
+.download-buttons {
+  margin-top: 20px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 20px;
+  margin-right: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.btn img {
+  height: 24px;
+  margin-right: 10px;
+}
+
+.android-btn {
+  background-color: #34a853;
+}
+
+.ios-btn {
+  background-color: #000;
+}
+
+/* Mobile Screen Animation */
+.hero-image {
+  position: relative;
+  width: 300px;
+}
+
+.animated-mobile {
+  width: 100%;
+  animation: float 2s infinite alternate ease-in-out;
+}
+
+@keyframes float {
+  from { transform: translateY(0); }
+  to { transform: translateY(-15px); }
+}
+
+/* Projects Section */
+.projects {
+  margin: 60px 0;
+  text-align: center;
+}
+
+.projects h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.projects-container {
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+  padding: 20px;
+  scroll-behavior: smooth;
+}
+
+.project-card {
+  min-width: 200px;
+  height: 250px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: transform 0.3s ease-in-out;
+}
+
+.project-card:hover {
+  transform: scale(1.1);
+}

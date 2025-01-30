@@ -1,164 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nxho - Innovative Solutions for the Future</title>
-
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Custom Styles -->
-  <link rel="stylesheet" href="styles.css">
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 </head>
 <body>
 
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light shadow-sm">
-    <div class="container">
-      <a class="navbar-brand" href="#">Nxho</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link active" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#portfolio">Portfolio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#services">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-left">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Help</a></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <img src="logo.png" alt="Logo" class="logo">
+        </div>
+    </nav>
 
-  <!-- Hero Section -->
-  <section class="hero-section d-flex align-items-center justify-content-center vh-100" id="hero">
-    <div class="container text-center text-white">
-      <h1 class="display-3 fw-bold">Welcome to Nxho</h1>
-      <p class="lead">Innovative solutions for a smarter tomorrow</p>
-      <a href="#portfolio" class="btn btn-light btn-lg animated bounce">Explore Our Work</a>
-    </div>
-  </section>
-
-  <!-- Portfolio Section -->
-  <section id="portfolio" class="py-5 bg-light">
-    <div class="container">
-      <h2 class="text-center mb-5">Portfolio</h2>
-      <div class="row g-4">
-        <div class="col-md-4">
-          <div class="card shadow-sm hover-shadow">
-            <img src="project1.jpg" class="card-img-top" alt="Project 1">
-            <div class="card-body">
-              <h5 class="card-title">Project 1</h5>
-              <p class="card-text">Description of Project 1.</p>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Experience the Future</h1>
+            <p>Download our app and stay ahead of the game.</p>
+            <div class="download-buttons">
+                <a href="https://play.google.com" target="_blank" class="btn android-btn">
+                    <img src="google-play.png" alt="Google Play"> Google Play
+                </a>
+                <a href="https://www.apple.com/app-store/" target="_blank" class="btn ios-btn">
+                    <img src="app-store.png" alt="App Store"> App Store
+                </a>
             </div>
-          </div>
         </div>
-        <div class="col-md-4">
-          <div class="card shadow-sm hover-shadow">
-            <img src="project2.jpg" class="card-img-top" alt="Project 2">
-            <div class="card-body">
-              <h5 class="card-title">Project 2</h5>
-              <p class="card-text">Description of Project 2.</p>
-            </div>
-          </div>
+        <div class="hero-image">
+            <img src="mobile-screen.png" alt="Mobile App" class="animated-mobile">
         </div>
-        <div class="col-md-4">
-          <div class="card shadow-sm hover-shadow">
-            <img src="project3.jpg" class="card-img-top" alt="Project 3">
-            <div class="card-body">
-              <h5 class="card-title">Project 3</h5>
-              <p class="card-text">Description of Project 3.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Services Section -->
-  <section id="services" class="py-5">
-    <div class="container">
-      <h2 class="text-center mb-5">Our Services</h2>
-      <div class="row g-4">
-        <div class="col-md-4">
-          <div class="card border-light h-100">
-            <div class="card-body">
-              <h5 class="card-title">App Development</h5>
-              <p class="card-text">Tailored mobile app solutions for your business.</p>
-            </div>
-          </div>
+    <!-- Projects Section -->
+    <section class="projects">
+        <h2>Our Projects</h2>
+        <div class="projects-container">
+            <div class="project-card">Project 1</div>
+            <div class="project-card">Project 2</div>
+            <div class="project-card">Project 3</div>
+            <div class="project-card">Project 4</div>
+            <div class="project-card">Project 5</div>
         </div>
-        <div class="col-md-4">
-          <div class="card border-light h-100">
-            <div class="card-body">
-              <h5 class="card-title">UI/UX Design</h5>
-              <p class="card-text">Crafting user-friendly and beautiful designs.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card border-light h-100">
-            <div class="card-body">
-              <h5 class="card-title">AI Solutions</h5>
-              <p class="card-text">AI-driven development for smarter applications.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="py-5 bg-dark text-white">
-    <div class="container">
-      <h2 class="text-center mb-5">Get in Touch</h2>
-      <form id="contact-form">
-        <div class="mb-3">
-          <label for="name" class="form-label">Name</label>
-          <input type="text" class="form-control" id="name" required>
-        </div>
-        <div class="mb-3">
-          <label for="email" class="form-label">Email</label>
-          <input type="email" class="form-control" id="email" required>
-        </div>
-        <div class="mb-3">
-          <label for="message" class="form-label">Message</label>
-          <textarea class="form-control" id="message" rows="5" required></textarea>
-        </div>
-        <button type="submit" class="btn btn-light">Submit</button>
-      </form>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="py-4 bg-dark text-white text-center">
-    <div class="container">
-      <p class="mb-0">&copy; 2025 Nxho. All rights reserved.</p>
-      <div class="social-icons mt-2">
-        <a href="#" class="text-white me-3">Facebook</a>
-        <a href="#" class="text-white me-3">LinkedIn</a>
-        <a href="#" class="text-white">Twitter</a>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Bootstrap JS and dependencies -->
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
-
-  <!-- Custom JavaScript for animations and form handling -->
-  <script src="script.js"></script>
 </body>
 </html>
